@@ -8,9 +8,7 @@
 function human_to_db($number) {
     
     $number = preg_replace("/[^0-9]/", "", $number);
-    
-    print_r($number);
-    
+        
     $db_number = '27' . substr($number, -9);
     
     return $db_number;
